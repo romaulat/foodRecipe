@@ -580,10 +580,6 @@ video {
   height: 8rem;
 }
 
-.min-h-0{
-  min-height: 0px;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
@@ -913,11 +909,21 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:justify-end{
     justify-content: flex-end;
   }
 
   .md\:border-2{
     border-width: 2px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
