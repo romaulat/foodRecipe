@@ -580,6 +580,14 @@ video {
   height: 8rem;
 }
 
+.min-h-0{
+  min-height: 0px;
+}
+
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-5{
   width: 1.25rem;
 }
